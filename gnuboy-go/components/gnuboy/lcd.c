@@ -55,22 +55,33 @@ struct scan scan;
 #define GB_GRAPEFR_PALETTE { 0xddf5ff, 0x6bb2f4, 0x9165b7, 0x6c2965 }
 #define GB_MEGAMAN_PALETTE { 0xcecece, 0xdf9e6f, 0x8e6742, 0x332510 }
 #define GB_POKEMON_PALETTE { 0xffefff, 0x8cb5f7, 0x9c7384, 0x101018 }
+// -----------------------
+// adding more gbc palette
+// -----------------------
+// Super Mario Land 2 (SGB):
+#define GB_SML2SGB_PALETTE { 0xb6f7ef, 0x77a6df, 0x00c611, 0x000000 }
+// Kid Icarus (SGB)
+#define GB_KIDISGB_PALETTE { 0xf7f7ce, 0x508ef7, 0x00009e, 0x00001e }
+// Kirby (SGB)
+#define GB_KIRBSGB_PALETTE { 0xf7bef7, 0x8686e7, 0xe73377, 0x962c2c }
 
 
 
 
-
-static int palettes[8][4] = {GB_DEFAULT_PALETTE,
+static int palettes[11][4] = {GB_DEFAULT_PALETTE,
 							GB_2BGRAYS_PALETTE,
 							GB_LINKSAW_PALETTE,
 							GB_NSUPRGB_PALETTE,
 							GB_NGBARNE_PALETTE,
 							GB_GRAPEFR_PALETTE,
 							GB_MEGAMAN_PALETTE,
-							GB_POKEMON_PALETTE	};
+							GB_POKEMON_PALETTE,
+							GB_SML2SGB_PALETTE,
+							GB_KIDISGB_PALETTE,
+							GB_KIRBSGB_PALETTE };
 
 static int current_palette = 1;
-static int nr_of_palettes = 8;
+static int nr_of_palettes = 11;
 
 					
 static int sprsort = 1;
